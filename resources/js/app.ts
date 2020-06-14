@@ -1,6 +1,10 @@
-import './bootstrap.ts';
+import Vue          from 'vue';
+import RegisterForm from "./components/RegisterForm.vue";
 
-import Vue from 'vue';
+Vue.component(
+    `register-form`,
+    RegisterForm
+);
 
 new Vue({
     el: `#app`

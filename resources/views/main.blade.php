@@ -11,10 +11,13 @@
             background-color: #222;
         }
     </style>
+    <script src="{{asset('js/app.js')}}" defer></script>
 </head>
 
 <body>
-@yield('content')
+<div id="app">
+    @yield('content')
+</div>
 </body>
 
 </html>

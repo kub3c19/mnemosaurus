@@ -11,5 +11,24 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .stylus('resources/stylus/app.styl', 'public/css');
+mix.js('resources/js/app.ts', 'public/js')
+    .stylus('resources/stylus/app.styl', 'public/css')
+    .webpackConfig({
+        module: {
+            rules: [
+                {
+                    test: /\.tsx?$/,
+                    use: [{
+                        loader: 'ts-loader',
+                        options: {
+                            appendTsSuffixTo: [/\.vue$/]
+                        }
+                    }],
+                    exclude: /node_modules/
+                }
+            ]
+        },
+        resolve: {
+            extensions: ['*', '.js', '.jsx', '.vue', '.ts', '.tsx']
+        }
+    });

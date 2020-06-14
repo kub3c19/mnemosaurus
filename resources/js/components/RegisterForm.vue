@@ -32,6 +32,7 @@
     })
     export default class RegisterForm extends Vue
     {
+        /** @description Token preventing Cross-site request forgery. */
         @Prop({required: true, type: String}) token!: string;
 
         public $refs!: {

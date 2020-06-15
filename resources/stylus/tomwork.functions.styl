@@ -169,7 +169,10 @@ transition()
     if length(arguments) > 1
         transition: arguments
     else
-        transition: all arguments
+        if (arguments == 'none')
+            transition: none
+        else
+            transition: all arguments
 
 user-select()
     if (!arguments)

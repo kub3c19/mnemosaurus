@@ -36,7 +36,7 @@ class SessionController extends Controller
     {
         if (auth()->attempt(request(['email', 'password'])) == false) {
             return back()->withErrors([
-                'message' => 'Prihlasovacie údaje nesedia, skúste prosím znovu'
+                'message' => 'Prihlasovacie údaje nesedia, skúste to prosím znovu'
             ]);
         }
         

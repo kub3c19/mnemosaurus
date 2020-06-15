@@ -130,7 +130,7 @@ body {
 button {
   background: transparent;
   border: 1px solid #fff;
-  color: #fff;
+  color: inherit;
   cursor: pointer;
   font: inherit;
   outline: 0;
@@ -151,4 +151,13 @@ input {
   padding-left: 0.4em;
   padding-bottom: 0.4em;
   padding-top: 0.4em;
+}
+.form-element {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }

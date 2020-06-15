@@ -2,8 +2,8 @@
     <div class="register-form-container">
         <div class="register-form">
             <h1>Registrácia</h1>
-            <form action="/register" method="POST" ref="form" @submit="submitOn">
-                <input name="_token" type="hidden" :value="token">
+            <form action="/register" method="post" ref="form" @submit="submitOn">
+                <csrf-token/>
                 <div class="form-element">
                     <label for="username">Username:</label>
                     <input id="username" name="username" type="text" v-model="username">
@@ -23,18 +23,18 @@
 </template>
 
 <script lang="ts">
-    import Vue               from 'vue';
-    import {Component, Prop} from "vue-property-decorator";
+    import {Component, Vue} from "vue-property-decorator";
+    import CsrfToken        from "./CsrfToken.vue";
 
     /** @description A component containing the register form. */
     @Component({
+        components: {
+            CsrfToken
+        },
         name: `RegisterForm`
     })
     export default class RegisterForm extends Vue
     {
-        /** @description Token preventing Cross-site request forgery. */
-        @Prop({required: true, type: String}) token!: string;
-
         public $refs!: {
             form: HTMLFormElement
         };
@@ -84,11 +84,6 @@
         form
             margin-right 100px
             margin-top 35px
-
-    .form-element
-        align-items center
-        display flex
-        margin-vertical 10px
 
     label
         box-sizing border-box

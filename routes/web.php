@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/register', 'UserController@create');
-Route::post('register', 'UserController@store');
+Route::post('/register', 'UserController@store');

@@ -1,1 +1,1 @@
-Mnemosaurus je portál, ktorý má slúžiť ako pomôcka pre učenie jazykov. Zatiaľ je iba vo vývoji, ale neskôr by sme ho chceli poskytnúť pre širokú verejnosť.
+Mnemosaurus je portál, ktorý má slúžiť ako pomôcka pre učenie jazykov pomocou mnemotechnických pomôcok. Zatiaľ je iba vo vývoji, ale neskôr by sme ho chceli poskytnúť pre širokú verejnosť.

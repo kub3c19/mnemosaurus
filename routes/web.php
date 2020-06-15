@@ -19,3 +19,6 @@ Route::get('/', function () {
 
 Route::get('/register', 'UserController@create');
 Route::post('/register', 'UserController@store');
+
+Route::post('/login', 'SessionController@store');
+Route::get('/logout', 'SessionController@destroy');

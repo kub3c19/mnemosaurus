@@ -14,7 +14,7 @@
         /** @description Token preventing Cross-site request forgery. */
         public get token(): string
         {
-            return document.querySelector<HTMLMetaElement>(`meta[name=token]`).getAttribute(`value`);
+            return document.querySelector<HTMLMetaElement>(`meta[name=token]`).content;
         }
     }
 </script>

@@ -32,22 +32,7 @@
     export default class Mnemonics extends Vue
     {
         /** @description List of all mnemonics found by query. */
-        public mnemonics: MnemonicType[] = [
-            {
-                expression1: `šiška`,
-                expression2: `donut`,
-                language1: `slovenčina`,
-                language2: `angličtina`,
-                text: `Šiška je srandovná vec.`
-            },
-            {
-                expression1: `pičovina`,
-                expression2: `bullshit`,
-                language1: `slovenčina`,
-                language2: `angličtina`,
-                text: `Vyserieš pičovinu ako býk.`
-            }
-        ];
+        public mnemonics: MnemonicType[] = [];
 
         /** @description Query used to search expressions. */
         public query: string = ``;

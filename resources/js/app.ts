@@ -1,6 +1,7 @@
 import Vue             from 'vue';
 import RegisterForm    from "./components/RegisterForm.vue";
 import HeaderComponent from "./components/HeaderComponent.vue";
+import Mnemonics       from "./components/Mnemonics.vue";
 
 Vue.component(
     `register-form`,
@@ -9,6 +10,10 @@ Vue.component(
 Vue.component(
     `header-component`,
     HeaderComponent
+);
+Vue.component(
+    `mnemonics`,
+    Mnemonics
 );
 
 new Vue({

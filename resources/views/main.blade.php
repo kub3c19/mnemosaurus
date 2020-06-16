@@ -12,6 +12,7 @@
 
 <body>
 <div id="app">
+    <header-component username="{{ Auth::check() ? Auth::user()->username : '' }}"></header-component>
     @yield('content')
 </div>
 </body>

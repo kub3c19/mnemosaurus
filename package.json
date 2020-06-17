@@ -7,13 +7,22 @@
         "watch-poll": "npm run watch -- --watch-poll",
         "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
         "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "test": "jest"
     },
     "devDependencies": {
+        "@babel/core": "^7.10.2",
+        "@babel/preset-env": "^7.10.2",
+        "@babel/preset-typescript": "^7.10.1",
         "@types/axios": "^0.14.0",
+        "@types/jest": "^26.0.0",
         "@types/lodash": "^4.14.155",
+        "@vue/test-utils": "^1.0.3",
         "axios": "^0.19",
+        "babel-jest": "^26.0.1",
         "cross-env": "^7.0",
+        "jest": "^26.0.1",
+        "jest-fetch-mock": "^3.0.3",
         "laravel-mix": "^5.0.1",
         "lodash": "^4.17.13",
         "resolve-url-loader": "^3.1.0",
@@ -22,13 +31,39 @@
         "stylus": "^0.54.7",
         "stylus-loader": "^3.0.2",
         "ts-essentials": "^6.0.7",
+        "ts-jest": "^26.1.0",
         "ts-loader": "^7.0.5",
         "typescript": "^3.9.5",
         "vue": "^2.6.11",
         "vue-class-component": "^7.2.3",
+        "vue-jest": "^3.0.5",
         "vue-loader": "^15.9.2",
         "vue-property-decorator": "^8.5.0",
         "vue-template-compiler": "^2.6.11"
     },
-    "dependencies": {}
+    "dependencies": {
+        "babel-core": "^7.0.0-bridge.0"
+    },
+    "jest": {
+        "automock": false,
+        "moduleFileExtensions": [
+            "js",
+            "json",
+            "ts",
+            "vue"
+        ],
+        "moduleNameMapper": {
+            "^@/(.*)$": "<rootDir>/resources/$1"
+        },
+        "setupFiles": [
+            "./jest.setup.js"
+        ],
+        "testMatch": [
+            "**/resources/js/tests/**/*.ts"
+        ],
+        "transform": {
+            "^.+\\.tsx?$": "ts-jest",
+            ".*\\.(vue)$": "vue-jest"
+        }
+    }
 }

@@ -4,17 +4,10 @@
             <h1>Registrácia</h1>
             <form action="/register" method="post" ref="form" @submit="submitOn">
                 <csrf-token/>
-                <div class="form-element">
-                    <label for="username">Username:</label>
-                    <input id="username" name="username" type="text" v-model="username">
-                </div>
-                <div class="form-element">
-                    <label for="email">Email:</label>
-                    <input id="email" name="email" type="email" v-model="email">
-                </div>
-                <div class="form-element">
-                    <label for="password">Heslo:</label>
-                    <input id="password" name="password" type="password" v-model="password">
+                <div v-for="[, field] in fieldsSorted" :key="field.name" class="form-field">
+                    <label :for="field.name">{{field.label}}:</label>
+                    <input :id="field.name" :name="field.name" :type="field.type" v-model="field.value">
+                    <div v-if="field.error" class="form-field-alert">{{field.error}}</div>
                 </div>
                 <button>Odoslať</button>
             </form>
@@ -36,6 +29,7 @@
     export default class RegisterForm extends Vue
     {
         public $refs!: {
+            /** @description Register form HTML Element. */
             form: HTMLFormElement
         };
 
@@ -47,22 +41,67 @@
         {
             const formData: FormData = new FormData(this.$refs.form);
 
-            /** @description If some form field is empty, prevents submitting. */
-            if ([...formData.values()].some((value) =>
+            $event.preventDefault();
+
+            return await fetch(`/register`, {
+                body: formData,
+                credentials: `same-origin`,
+                headers: {
+                    "X-Requested-With": "XMLHttpRequest",
+                },
+                method: `POST`
+            }).then(async (response) =>
             {
-                return !value;
-            }))
-            {
-                $event.preventDefault();
+                const {errors}: {errors: {[s: string]: string[]}} = await response.json();
+
+                Object.entries(errors).forEach(([formField, errors]) =>
+                {
+                    this.fields[formField].error = errors.join(`, `);
+                })
+            }).catch(console.error);
+        }
+
+        /** @description Form fields. */
+        public fields: {
+            [s: string]: FormField
+        } = {
+            /** @description The email form field. */
+            email: {
+                error: ``,
+                label: `Email`,
+                name: `email`,
+                order: 1,
+                type: `email`,
+                value: ``
+            },
+            /** @description The password form field. */
+            password: {
+                error: ``,
+                label: `Heslo`,
+                name: `password`,
+                order: 2,
+                type: `password`,
+                value: ``
+            },
+            /** @description The username form field. */
+            username: {
+                error: ``,
+                label: `Username`,
+                name: `username`,
+                order: 0,
+                type: `text`,
+                value: ``
             }
         }
 
-        /** @description The username form field. */
-        public username: string = ``;
-        /** @description The email form field. */
-        public email: string = ``;
-        /** @description The password form field. */
-        public password: string = ``;
+        /** @description Form fields sorted by their order value. */
+        public get fieldsSorted(): [string, FormField][]
+        {
+            return Object.entries(this.fields).sort(([, fieldA], [, fieldB]) =>
+            {
+                return fieldA.order - fieldB.order;
+            })
+        }
     }
 </script>
 

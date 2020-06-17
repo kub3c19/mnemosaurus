@@ -28,13 +28,58 @@ input
     box-sizing border-box
     min-width 300px
     padding-left .4em
-    padding-vertical .4em
 
-.form-element
+.form-field
     align-items center
     display flex
+    height 2em
+    line-height 2em
     margin-bottom 10px
+    position relative
 
 a
     font-color inherit
     text-decoration none
+
+.form-field-alert
+    background-color #cc0000
+    font-color #ffffff
+    height 100%
+    left calc(100% + 1em)
+    padding-horizontal .4em
+    position absolute
+    top 0
+    white-space nowrap
+    z 1
+
+    @media (max-width 1023px)
+        bottom auto
+        left 100px
+        right auto
+        top (2.3 * 1.5) em
+
+    @media (max-width 599px)
+        left 0
+        top (2.3 * 2.5) em
+
+    &:after
+        border-bottom 1em transparent
+        border-top 1em transparent
+        border-right 1em solid #cc0000
+        bottom 0
+        content ''
+        display block
+        height 0
+        left -1em
+        margin auto
+        position absolute
+        top 0
+        width 0
+
+        @media (max-width 1023px)
+            border-bottom-color $errorFontColor
+            border-top 0
+            border-vertical 1em transparent
+            bottom auto
+            left 10px
+            top -1em

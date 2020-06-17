@@ -18,10 +18,10 @@
                 </div>
                 <form v-if="loginFormVisible" action="/login" class="login-form" method="post">
                     <csrf-token/>
-                    <div class="form-element">
+                    <div class="form-field">
                         <input name="email" placeholder="Email" required type="email">
                     </div>
-                    <div class="form-element">
+                    <div class="form-field">
                         <input name="password" placeholder="Heslo" required type="password">
                     </div>
                     <button>Odoslať</button>

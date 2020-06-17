@@ -1411,22 +1411,7 @@ let Mnemonics = class Mnemonics extends vue_property_decorator_1.Vue {
     constructor() {
         super(...arguments);
         /** @description List of all mnemonics found by query. */
-        this.mnemonics = [
-            {
-                expression1: `šiška`,
-                expression2: `donut`,
-                language1: `slovenčina`,
-                language2: `angličtina`,
-                text: `Šiška je srandovná vec.`
-            },
-            {
-                expression1: `pičovina`,
-                expression2: `bullshit`,
-                language1: `slovenčina`,
-                language2: `angličtina`,
-                text: `Vyserieš pičovinu ako býk.`
-            }
-        ];
+        this.mnemonics = [];
         /** @description Query used to search expressions. */
         this.query = ``;
     }
@@ -1500,12 +1485,36 @@ const CsrfToken_vue_1 = __importDefault(__webpack_require__(/*! ./CsrfToken.vue 
 let RegisterForm = class RegisterForm extends vue_property_decorator_1.Vue {
     constructor() {
         super(...arguments);
-        /** @description The username form field. */
-        this.username = ``;
-        /** @description The email form field. */
-        this.email = ``;
-        /** @description The password form field. */
-        this.password = ``;
+        /** @description Form fields. */
+        this.fields = {
+            /** @description The email form field. */
+            email: {
+                error: ``,
+                label: `Email`,
+                name: `email`,
+                order: 1,
+                type: `email`,
+                value: ``
+            },
+            /** @description The password form field. */
+            password: {
+                error: ``,
+                label: `Heslo`,
+                name: `password`,
+                order: 2,
+                type: `password`,
+                value: ``
+            },
+            /** @description The username form field. */
+            username: {
+                error: ``,
+                label: `Username`,
+                name: `username`,
+                order: 0,
+                type: `text`,
+                value: ``
+            }
+        };
     }
     /**
      * @description Listener of the submit event.
@@ -1515,15 +1524,25 @@ let RegisterForm = class RegisterForm extends vue_property_decorator_1.Vue {
         return __awaiter(this, void 0, void 0, function* () {
             const formData = new FormData(this.$refs.form);
             $event.preventDefault();
-            console.log(yield fetch(`/register`, {
+            return yield fetch(`/register`, {
                 body: formData,
                 credentials: `same-origin`,
                 headers: {
                     "X-Requested-With": "XMLHttpRequest",
-                    "X-CSRF-Token": document.querySelector('meta[name=token]').content
                 },
                 method: `POST`
-            }).catch(console.error));
+            }).then((response) => __awaiter(this, void 0, void 0, function* () {
+                const { errors } = yield response.json();
+                Object.entries(errors).forEach(([formField, errors]) => {
+                    this.fields[formField].error = errors.join(`, `);
+                });
+            })).catch(console.error);
+        });
+    }
+    /** @description Form fields sorted by their order value. */
+    get fieldsSorted() {
+        return Object.entries(this.fields).sort(([, fieldA], [, fieldB]) => {
+            return fieldA.order - fieldB.order;
         });
     }
 };
@@ -2000,7 +2019,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-element" }, [
+    return _c("div", { staticClass: "form-field" }, [
       _c("input", {
         attrs: {
           name: "email",
@@ -2015,7 +2034,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-element" }, [
+    return _c("div", { staticClass: "form-field" }, [
       _c("input", {
         attrs: {
           name: "password",
@@ -2098,20 +2117,42 @@ var render = function() {
                 {
                   staticStyle: { "padding-right": "5px", "text-align": "right" }
                 },
-                [_vm._v("(" + _vm._s(mnemonic.language1) + ")")]
+                [
+                  _vm._v(
+                    "(" +
+                      _vm._s(
+                        mnemonic.expression_expression.expression1.language.code
+                      ) +
+                      ")"
+                  )
+                ]
               ),
               _vm._v(" "),
-              _c("td", [_vm._v(_vm._s(mnemonic.expression1))]),
+              _c("td", [
+                _vm._v(_vm._s(mnemonic.expression_expression.expression1.text))
+              ]),
               _vm._v(" "),
               _c(
                 "td",
                 {
                   staticStyle: { "padding-right": "5px", "text-align": "right" }
                 },
-                [_vm._v(_vm._s(mnemonic.expression2))]
+                [
+                  _vm._v(
+                    _vm._s(mnemonic.expression_expression.expression2.text)
+                  )
+                ]
               ),
               _vm._v(" "),
-              _c("td", [_vm._v("(" + _vm._s(mnemonic.language2) + ")")])
+              _c("td", [
+                _vm._v(
+                  "(" +
+                    _vm._s(
+                      mnemonic.expression_expression.expression2.language.code
+                    ) +
+                    ")"
+                )
+              ])
             ]),
             _vm._v(" "),
             _c("tr", [
@@ -2162,84 +2203,112 @@ var render = function() {
         [
           _c("csrf-token"),
           _vm._v(" "),
-          _c("div", { staticClass: "form-element" }, [
-            _c("label", { attrs: { for: "username" } }, [_vm._v("Username:")]),
-            _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.username,
-                  expression: "username"
-                }
-              ],
-              attrs: { id: "username", name: "username", type: "text" },
-              domProps: { value: _vm.username },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.username = $event.target.value
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-element" }, [
-            _c("label", { attrs: { for: "email" } }, [_vm._v("Email:")]),
-            _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.email,
-                  expression: "email"
-                }
-              ],
-              attrs: { id: "email", name: "email", type: "email" },
-              domProps: { value: _vm.email },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.email = $event.target.value
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-element" }, [
-            _c("label", { attrs: { for: "password" } }, [_vm._v("Heslo:")]),
-            _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.password,
-                  expression: "password"
-                }
-              ],
-              attrs: { id: "password", name: "password", type: "password" },
-              domProps: { value: _vm.password },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.password = $event.target.value
-                }
-              }
-            })
-          ]),
+          _vm._l(_vm.fieldsSorted, function(ref) {
+            var field = ref[1]
+            return _c("div", { key: field.name, staticClass: "form-field" }, [
+              _c("label", { attrs: { for: field.name } }, [
+                _vm._v(_vm._s(field.label) + ":")
+              ]),
+              _vm._v(" "),
+              field.type === "checkbox"
+                ? _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: field.value,
+                        expression: "field.value"
+                      }
+                    ],
+                    attrs: {
+                      id: field.name,
+                      name: field.name,
+                      type: "checkbox"
+                    },
+                    domProps: {
+                      checked: Array.isArray(field.value)
+                        ? _vm._i(field.value, null) > -1
+                        : field.value
+                    },
+                    on: {
+                      change: function($event) {
+                        var $$a = field.value,
+                          $$el = $event.target,
+                          $$c = $$el.checked ? true : false
+                        if (Array.isArray($$a)) {
+                          var $$v = null,
+                            $$i = _vm._i($$a, $$v)
+                          if ($$el.checked) {
+                            $$i < 0 &&
+                              _vm.$set(field, "value", $$a.concat([$$v]))
+                          } else {
+                            $$i > -1 &&
+                              _vm.$set(
+                                field,
+                                "value",
+                                $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                              )
+                          }
+                        } else {
+                          _vm.$set(field, "value", $$c)
+                        }
+                      }
+                    }
+                  })
+                : field.type === "radio"
+                ? _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: field.value,
+                        expression: "field.value"
+                      }
+                    ],
+                    attrs: { id: field.name, name: field.name, type: "radio" },
+                    domProps: { checked: _vm._q(field.value, null) },
+                    on: {
+                      change: function($event) {
+                        return _vm.$set(field, "value", null)
+                      }
+                    }
+                  })
+                : _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: field.value,
+                        expression: "field.value"
+                      }
+                    ],
+                    attrs: {
+                      id: field.name,
+                      name: field.name,
+                      type: field.type
+                    },
+                    domProps: { value: field.value },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(field, "value", $event.target.value)
+                      }
+                    }
+                  }),
+              _vm._v(" "),
+              field.error
+                ? _c("div", { staticClass: "form-field-alert" }, [
+                    _vm._v(_vm._s(field.error))
+                  ])
+                : _vm._e()
+            ])
+          }),
           _vm._v(" "),
           _c("button", [_vm._v("Odoslať")])
         ],
-        1
+        2
       )
     ])
   ])

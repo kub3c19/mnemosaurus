@@ -22,3 +22,6 @@ Route::post('/register', 'UserController@store');
 
 Route::post('/login', 'SessionController@store');
 Route::get('/logout', 'SessionController@destroy');
+
+Route::get('/mnemonics', 'MnemonicController@getAllMatchingQueryAndLanguage');
+

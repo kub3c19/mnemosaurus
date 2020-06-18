@@ -8,10 +8,10 @@
             <table class="mnemonic-table">
                 <tbody v-for="(mnemonic, mnemonicIndex) in mnemonics" :key="mnemonicIndex">
                     <tr>
-                        <td style="padding-right: 5px; text-align: right">({{mnemonic.expression_expression.expression1.language.code}})</td>
-                        <td>{{mnemonic.expression_expression.expression1.text}}</td>
-                        <td style="padding-right: 5px; text-align: right">{{mnemonic.expression_expression.expression2.text}}</td>
-                        <td>({{mnemonic.expression_expression.expression2.language.code}})</td>
+                        <td style="padding-right: 5px; text-align: right">({{mnemonic.language1}})</td>
+                        <td>{{mnemonic.expression1}}</td>
+                        <td style="padding-right: 5px; text-align: right">{{mnemonic.expression2}}</td>
+                        <td>({{mnemonic.language2}})</td>
                     </tr>
                     <tr>
                         <td class="text" colspan="4">{{mnemonic.text}}</td>

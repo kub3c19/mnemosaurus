@@ -2117,42 +2117,20 @@ var render = function() {
                 {
                   staticStyle: { "padding-right": "5px", "text-align": "right" }
                 },
-                [
-                  _vm._v(
-                    "(" +
-                      _vm._s(
-                        mnemonic.expression_expression.expression1.language.code
-                      ) +
-                      ")"
-                  )
-                ]
+                [_vm._v("(" + _vm._s(mnemonic.language1) + ")")]
               ),
               _vm._v(" "),
-              _c("td", [
-                _vm._v(_vm._s(mnemonic.expression_expression.expression1.text))
-              ]),
+              _c("td", [_vm._v(_vm._s(mnemonic.expression1))]),
               _vm._v(" "),
               _c(
                 "td",
                 {
                   staticStyle: { "padding-right": "5px", "text-align": "right" }
                 },
-                [
-                  _vm._v(
-                    _vm._s(mnemonic.expression_expression.expression2.text)
-                  )
-                ]
+                [_vm._v(_vm._s(mnemonic.expression2))]
               ),
               _vm._v(" "),
-              _c("td", [
-                _vm._v(
-                  "(" +
-                    _vm._s(
-                      mnemonic.expression_expression.expression2.language.code
-                    ) +
-                    ")"
-                )
-              ])
+              _c("td", [_vm._v("(" + _vm._s(mnemonic.language2) + ")")])
             ]),
             _vm._v(" "),
             _c("tr", [

@@ -102,9 +102,9 @@ class MnemonicController extends Controller
                 ->orWhere('expression_2.text', 'like', '%' . $request['q'] . '%')
                 ->get([
                     'expression_1.text as expression1',
-                    'language_1.code as language_1',
-                    'expression_2.text as expression_2',
-                    'language_2.code as language_2',
+                    'language_1.code as language1',
+                    'expression_2.text as expression2',
+                    'language_2.code as language2',
                     'mnemonics.text'
                 ]);
         } else {

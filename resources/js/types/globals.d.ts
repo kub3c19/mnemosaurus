@@ -23,8 +23,12 @@ declare global
         label: string,
         /** @description HTML name attribute of the field. */
         name: string,
+        /** @description In case the field is a select, list of all options. */
+        options?: { label: string, value: string }[],
         /** @description Order in which the field is shown in the form. */
         order: number,
+        /** @description HTML tag of the field. */
+        tag: 'select' | 'input' | 'textarea',
         /** @description Type of the field, in case it's an input. */
         type: '' | 'text' | 'email' | 'password',
         /** @description Value of the field */

@@ -16,8 +16,10 @@
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from "vue-property-decorator";
-    import CsrfToken        from "./CsrfToken.vue";
+    import {Component} from "vue-property-decorator";
+    import {mixins}    from "vue-class-component";
+    import CsrfToken   from "./CsrfToken.vue";
+    import FormMixin   from "../mixins/Form";
 
     /** @description A component containing the register form. */
     @Component({
@@ -26,52 +28,18 @@
         },
         name: `RegisterForm`
     })
-    export default class RegisterForm extends Vue
+    export default class RegisterForm extends mixins(FormMixin)
     {
-        public $refs!: {
-            /** @description Register form HTML Element. */
-            form: HTMLFormElement
-        };
-
-        /**
-         * @description Listener of the submit event.
-         * @param $event An object containing the event-related data.
-         * */
-        public async submitOn($event: Event): Promise<void>
-        {
-            const formData: FormData = new FormData(this.$refs.form);
-
-            $event.preventDefault();
-
-            return await fetch(`/register`, {
-                body: formData,
-                credentials: `same-origin`,
-                headers: {
-                    "X-Requested-With": "XMLHttpRequest",
-                },
-                method: `POST`
-            }).then(async (response) =>
-            {
-                const {errors}: {errors: {[s: string]: string[]}} = await response.json();
-
-                Object.entries(errors).forEach(([formField, errors]) =>
-                {
-                    this.fields[formField].error = errors.join(`, `);
-                })
-            }).catch(console.error);
-        }
-
         /** @description Form fields. */
-        public fields: {
-            [s: string]: FormField
-        } = {
+        public fields = {
             /** @description The email form field. */
             email: {
                 error: ``,
                 label: `Email`,
                 name: `email`,
                 order: 1,
-                type: `email`,
+                tag: `input` as 'input',
+                type: `email` as 'email',
                 value: ``
             },
             /** @description The password form field. */
@@ -80,7 +48,8 @@
                 label: `Heslo`,
                 name: `password`,
                 order: 2,
-                type: `password`,
+                tag: `input` as 'input',
+                type: `password` as 'password',
                 value: ``
             },
             /** @description The username form field. */
@@ -89,18 +58,10 @@
                 label: `Username`,
                 name: `username`,
                 order: 0,
-                type: `text`,
+                tag: `input` as 'input',
+                type: `text` as 'text',
                 value: ``
             }
-        }
-
-        /** @description Form fields sorted by their order value. */
-        public get fieldsSorted(): [string, FormField][]
-        {
-            return Object.entries(this.fields).sort(([, fieldA], [, fieldB]) =>
-            {
-                return fieldA.order - fieldB.order;
-            })
         }
     }
 </script>

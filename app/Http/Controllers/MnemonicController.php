@@ -93,13 +93,46 @@ class MnemonicController extends Controller
     {
         if (!empty($request['q'])) {
             return DB::table('mnemonics')
-                ->join('expression_expression', 'mnemonics.expression_expression_id', '=', 'expression_expression.id')
-                ->join('expressions as expression_1', 'expression_expression.expression_1_id', '=', 'expression_1.id')
-                ->join('expressions as expression_2', 'expression_expression.expression_2_id', '=', 'expression_2.id')
-                ->join('languages as language_1', 'expression_1.language_id', '=', 'language_1.id')
-                ->join('languages as language_2', 'expression_2.language_id', '=', 'language_2.id')
-                ->where('expression_1.text', 'like', '%' . $request['q'] . '%')
-                ->orWhere('expression_2.text', 'like', '%' . $request['q'] . '%')
+                ->join(
+                    'expression_expression',
+                    'mnemonics.expression_expression_id',
+                    '=',
+                    'expression_expression.id'
+                )
+                ->join(
+                    'expressions as expression_1',
+                    'expression_expression.expression_1_id',
+                    '=',
+                    'expression_1.id'
+                )
+                ->join(
+                    'expressions as expression_2',
+                    'expression_expression.expression_2_id',
+                    '=',
+                    'expression_2.id'
+                )
+                ->join(
+                    'languages as language_1',
+                    'expression_1.language_id',
+                    '=',
+                    'language_1.id'
+                )
+                ->join(
+                    'languages as language_2',
+                    'expression_2.language_id',
+                    '=',
+                    'language_2.id'
+                )
+                ->where(
+                    'expression_1.text',
+                    'like',
+                    '%' . $request['q'] . '%'
+                )
+                ->orWhere(
+                    'expression_2.text',
+                    'like',
+                    '%' . $request['q'] . '%'
+                )
                 ->get([
                     'expression_1.text as expression1',
                     'language_1.code as language1',

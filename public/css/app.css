@@ -144,17 +144,27 @@ button:hover {
 h1 {
   font-size: 2.5em;
 }
-input {
+input,
+textarea,
+select {
   border: 0 solid;
   box-sizing: border-box;
+  font: inherit;
   min-width: 300px;
   padding-left: 0.4em;
+  resize: none;
+}
+input,
+select {
+  height: 2em;
+  line-height: 2;
+}
+textarea {
+  height: 4em;
 }
 .form-field {
   align-items: center;
   display: flex;
-  height: 2em;
-  line-height: 2em;
   margin-bottom: 10px;
   position: relative;
 }

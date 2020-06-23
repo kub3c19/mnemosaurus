@@ -27,5 +27,3 @@ Route::resources([
     'languages' => 'LanguageController',
     'mnemonics' => 'MnemonicController',
 ]);
-
-Route::get('/mnemonics', 'MnemonicController@getAllMatchingQueryAndLanguage');

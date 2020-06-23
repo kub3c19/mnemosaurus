@@ -23,6 +23,7 @@ module.exports = {
         'indent-legacy': 'off',
         'import/extensions': ['error', 'always',
             {
+                'd.ts': 'never',
                 'js': 'never',
                 'mjs': 'never',
                 'jsx': 'never',
@@ -94,7 +95,7 @@ module.exports = {
     settings: {
         'import/resolver': {
             node: {
-                extensions: ['.js', '.jsx', '.ts', '.tsx', '.json']
+                extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.d.ts']
             }
         }
     }

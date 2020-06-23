@@ -17,9 +17,9 @@
 
 <script lang="ts">
     import {Component} from "vue-property-decorator";
-    import {mixins}    from "vue-class-component";
-    import CsrfToken   from "./CsrfToken.vue";
-    import FormMixin   from "../mixins/Form";
+    import {mixins}  from "vue-class-component";
+    import CsrfToken from "./CsrfToken.vue";
+    import FormMixin from "../mixins/Form";
 
     /** @description A component containing the register form. */
     @Component({
@@ -63,6 +63,8 @@
                 value: ``
             }
         }
+
+        public redirectTo = `/`;
     }
 </script>
 

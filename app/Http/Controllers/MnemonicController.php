@@ -28,7 +28,7 @@ class MnemonicController extends Controller
      */
     public function create()
     {
-        return view('add-mnemonic');
+        return view('mnemonics.create');
     }
 
     /**

@@ -41,12 +41,20 @@ class MnemonicController extends Controller
     {
         $expression_1 = Expression::create([
             'text' => $request->expression1,
-            'language_id' => $request->language1,
+            'language_id' => Language::where(
+                'code',
+                '=',
+                $request->language1
+            )->first()->id,
         ]);
 
         $expression_2 = Expression::create([
             'text' => $request->expression2,
-            'language_id' => $request->language2,
+            'language_id' => Language::where(
+                'code',
+                '=',
+                $request->language2
+            )->first()->id,
         ]);
 
         $expression_expression = ExpressionExpression::create([

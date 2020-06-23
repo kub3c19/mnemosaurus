@@ -1,4 +1,5 @@
 import {Component, Vue}          from "vue-property-decorator";
+// eslint-disable-next-line no-unused-vars
 import {Merge}                   from "ts-essentials";
 // eslint-disable-next-line no-unused-vars
 import {FormField, ResponseJSON} from "../types";

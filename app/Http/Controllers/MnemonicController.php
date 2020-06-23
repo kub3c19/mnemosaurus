@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Expression;
+use App\ExpressionExpression;
+use App\Language;
+use App\Mnemonic;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -24,7 +28,7 @@ class MnemonicController extends Controller
      */
     public function create()
     {
-        //
+        return view('add-mnemonic');
     }
 
     /**
@@ -35,7 +39,27 @@ class MnemonicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $expression_1 = Expression::create([
+            'text' => $request->expression1,
+            'language_id' => $request->language1,
+        ]);
+
+        $expression_2 = Expression::create([
+            'text' => $request->expression2,
+            'language_id' => $request->language2,
+        ]);
+
+        $expression_expression = ExpressionExpression::create([
+            'expression_1_id' => $expression_1->id,
+            'expression_2_id' => $expression_2->id,
+        ]);
+
+        Mnemonic::create([
+            'text' => $request->text,
+            'expression_expression_id' => $expression_expression->id
+        ]);
+
+        // return redirect()->to('/add-mnemonic');
     }
 
     /**

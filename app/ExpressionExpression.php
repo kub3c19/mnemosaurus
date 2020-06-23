@@ -6,6 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class ExpressionExpression extends Model
 {
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'expression_1_id', 'expression_2_id',
+    ];
+
     protected $table = 'expression_expression';
 
     /**

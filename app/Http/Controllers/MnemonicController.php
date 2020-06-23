@@ -58,8 +58,6 @@ class MnemonicController extends Controller
             'text' => $request->text,
             'expression_expression_id' => $expression_expression->id
         ]);
-
-        // return redirect()->to('/add-mnemonic');
     }
 
     /**

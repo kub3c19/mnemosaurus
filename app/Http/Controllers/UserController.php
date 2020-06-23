@@ -44,8 +44,6 @@ class UserController extends Controller
         $user = User::create(request(['username', 'email', 'password']));
 
         auth()->login($user);
-
-        return redirect()->to('/');
     }
 
     /**

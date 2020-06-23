@@ -33,7 +33,7 @@
 
 <script lang="ts">
     import {Component, Prop, Vue} from "vue-property-decorator";
-    import CsrfToken              from "./CsrfToken.vue";
+    import CsrfToken              from "../modules/form/components/CsrfToken.vue";
 
     /** @description A component containing the site header. */
     @Component({

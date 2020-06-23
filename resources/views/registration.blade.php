@@ -1,5 +1,5 @@
 @extends('main')
 
 @section('content')
-<register-form token="{{ csrf_token() }}"></register-form>
+<register-form></register-form>
 @endsection

@@ -23,11 +23,9 @@ Route::post('/register', 'UserController@store');
 Route::post('/login', 'SessionController@store');
 Route::get('/logout', 'SessionController@destroy');
 
-Route::get('/mnemonics', 'MnemonicController@getAllMatchingQueryAndLanguage');
-Route::get('/add-mnemonic', 'MnemonicController@create');
-Route::post('/add-mnemonic', 'MnemonicController@store');
-
-Route::resource('languages', 'LanguageController')->only([
-    'index'
+Route::resources([
+    'languages' => 'LanguageController',
+    'mnemonics' => 'MnemonicController',
 ]);
 
+Route::get('/mnemonics', 'MnemonicController@getAllMatchingQueryAndLanguage');

@@ -15,12 +15,11 @@ class LanguageController extends Controller
      */
     public function index()
     {
-        $languages = Language::all();
-        foreach ($languages as $language) {
-            $language->name = Locale::getDisplayLanguage($language->code, 'sk');
-        }
+        return Language::all()->map(function ($item) {
+            $item->name = Locale::getDisplayLanguage($item->code, 'sk');
 
-        return $languages;
+            return $item;
+        });
     }
 
     /**

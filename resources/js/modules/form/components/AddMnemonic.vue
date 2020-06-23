@@ -10,10 +10,11 @@
                         <select v-if="field.tag === `select`" :id="field.name" :name="field.name"
                                 :type="field.type" v-model="field.value">
                             <option v-for="option in field.options" :key="option.value"
-                                    :value="option.value">{{option.label}}</option>
+                                    :value="option.value">{{option.label}}
+                            </option>
                         </select>
                         <component v-else :is="field.tag" :id="field.name" :name="field.name"
-                                    :type="field.type" v-model="field.value"/>
+                                   :type="field.type" v-model="field.value"/>
                         <div v-if="field.error" class="form-field-alert">{{field.error}}</div>
                     </div>
                 </div>
@@ -25,9 +26,12 @@
 
 <script lang="ts">
     import {Component} from "vue-property-decorator";
-    import {mixins}  from "vue-class-component";
-    import CsrfToken from "./CsrfToken.vue";
-    import FormMixin from "../mixins/Form";
+    import {mixins}    from "vue-class-component";
+    import CsrfToken   from "./CsrfToken.vue";
+    import FormMixin   from "../mixins/Form";
+    // eslint-disable-next-line no-unused-vars
+    import {Merge}     from "ts-essentials";
+    import {FormField} from "../types";
 
     /** @description A component containing the form to add a mnemonic. */
     @Component({
@@ -38,6 +42,29 @@
     })
     export default class AddMnemonic extends mixins(FormMixin)
     {
+        public async languagesGet(): Promise<FormField['options'] | void>
+        {
+            return fetch(`/languages`).then(async (response: Merge<Response, {
+                json(): Promise<{ id: number, name: string }[]>
+            }>) =>
+            {
+                if (response.status >= 400)
+                {
+                    this.$root.$emit(`alert-show`, {
+                        message: `Unable to load languages`,
+                        type: `failed`
+                    });
+
+                    return;
+                }
+
+                return (await response.json()).map(({id, name}) =>
+                {
+                    return {label: name, value: id.toString()};
+                });
+            }).catch(console.error);
+        }
+
         /** @description Form fields. */
         public fields = {
             /** @description The email form field. */
@@ -63,16 +90,7 @@
                 error: ``,
                 label: `Jazyk 1`,
                 name: `language1`,
-                options: [
-                    {
-                        label: `Angličtina`,
-                        value: `en`
-                    },
-                    {
-                        label: `Slovenčina`,
-                        value: `sk`
-                    }
-                ],
+                options: [],
                 order: 0,
                 tag: `select` as 'select',
                 type: `` as '',
@@ -82,16 +100,7 @@
                 error: ``,
                 label: `Jazyk 2`,
                 name: `language2`,
-                options: [
-                    {
-                        label: `Angličtina`,
-                        value: `en`
-                    },
-                    {
-                        label: `Slovenčina`,
-                        value: `sk`
-                    }
-                ],
+                options: [],
                 order: 2,
                 tag: `select` as 'select',
                 type: `` as '',
@@ -106,6 +115,14 @@
                 type: `` as '',
                 value: ``
             }
+        }
+
+        public async created(): Promise<void>
+        {
+            const languages: FormField['options']  = await this.languagesGet() || [];
+
+            this.fields.language1.options = languages;
+            this.fields.language2.options = languages;
         }
     }
 </script>
@@ -148,8 +165,8 @@
     .form-field-container
         display grid
         grid-template "a c"\
-                      "b d"\
-                      "e e"
+        "b d"\
+        "e e"
 
     .form-field
         &:first-child

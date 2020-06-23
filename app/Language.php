@@ -11,7 +11,5 @@ class Language extends Model
      *
      * @var array
      */
-    protected $hidden = [
-        'code', 'created_at', 'updated_at',
-    ];
+    protected $hidden = ['code', 'created_at', 'updated_at'];
 }

@@ -11,10 +11,8 @@ class ExpressionExpression extends Model
      *
      * @var array
      */
-    protected $fillable = [
-        'expression_1_id', 'expression_2_id',
-    ];
-
+    protected $fillable = ['expression_1_id', 'expression_2_id'];
+    
     protected $table = 'expression_expression';
 
     /**

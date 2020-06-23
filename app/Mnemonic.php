@@ -11,9 +11,7 @@ class Mnemonic extends Model
      *
      * @var array
      */
-    protected $fillable = [
-        'text', 'expression_expression_id',
-    ];
+    protected $fillable = ['text', 'expression_expression_id'];
 
     /**
      * Get the expressions pair that owns the mnemonic.

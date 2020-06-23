@@ -80,7 +80,7 @@ class MnemonicController extends Controller
      */
     public function create()
     {
-        return view('mnemonics.create');
+        return view('mnemonics-create');
     }
 
     /**

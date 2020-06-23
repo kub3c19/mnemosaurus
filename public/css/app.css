@@ -177,6 +177,7 @@ a {
   color: #fff;
   height: 100%;
   left: calc(100% + 1em);
+  line-height: 2;
   padding-left: 0.4em;
   padding-right: 0.4em;
   position: absolute;

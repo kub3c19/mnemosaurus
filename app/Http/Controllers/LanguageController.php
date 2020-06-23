@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Language;
 use Illuminate\Http\Request;
-use Locale;
 
 class LanguageController extends Controller
 {
@@ -15,11 +14,7 @@ class LanguageController extends Controller
      */
     public function index()
     {
-        return Language::all()->map(function ($item) {
-            $item->name = Locale::getDisplayLanguage($item->code, 'sk');
-
-            return $item;
-        });
+        return Language::all();
     }
 
     /**

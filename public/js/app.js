@@ -2669,7 +2669,7 @@ var render = function() {
         "form",
         {
           ref: "form",
-          attrs: { action: "/register", method: "post" },
+          attrs: { action: "/users", method: "post" },
           on: { submit: _vm.submitOn }
         },
         [

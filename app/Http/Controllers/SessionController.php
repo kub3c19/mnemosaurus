@@ -39,8 +39,6 @@ class SessionController extends Controller
                 'message' => 'Prihlasovacie údaje nesedia, skúste to prosím znovu'
             ]);
         }
-        
-        return redirect()->to('/');
     }
 
     /**
@@ -85,7 +83,5 @@ class SessionController extends Controller
     public function destroy()
     {
         auth()->logout();
-        
-        return redirect()->to('/');
     }
 }

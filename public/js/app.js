@@ -2770,9 +2770,11 @@ var render = function() {
                       }),
                   _vm._v(" "),
                   field.error
-                    ? _c("div", { staticClass: "form-field-alert" }, [
-                        _vm._v(_vm._s(field.error))
-                      ])
+                    ? _c(
+                        "div",
+                        { staticClass: "form-field-alert right-sided" },
+                        [_vm._v(_vm._s(field.error))]
+                      )
                     : _vm._e()
                 ],
                 1
@@ -2940,7 +2942,7 @@ var render = function() {
               }),
           _vm._v(" "),
           field.error
-            ? _c("div", { staticClass: "form-field-alert" }, [
+            ? _c("div", { staticClass: "form-field-alert left-sided" }, [
                 _vm._v(_vm._s(field.error))
               ])
             : _vm._e()
@@ -3127,7 +3129,7 @@ var render = function() {
                   }),
               _vm._v(" "),
               field.error
-                ? _c("div", { staticClass: "form-field-alert" }, [
+                ? _c("div", { staticClass: "form-field-alert right-sided" }, [
                     _vm._v(_vm._s(field.error))
                   ])
                 : _vm._e()

@@ -170,7 +170,6 @@ textarea {
   background-color: #c00;
   color: #fff;
   height: 100%;
-  left: calc(100% + 1em);
   line-height: 2;
   padding-left: 0.4em;
   padding-right: 0.4em;
@@ -183,7 +182,6 @@ textarea {
   .form-field-alert {
     bottom: auto;
     left: 100px;
-    right: auto;
     top: 3.45em;
   }
 }
@@ -193,15 +191,37 @@ textarea {
     top: 5.75em;
   }
 }
+.form-field-alert.left-sided {
+  right: calc(100% + 1em);
+}
+@media (max-width: 1023px) {
+  .form-field-alert.left-sided {
+    right: auto;
+  }
+}
+.form-field-alert.left-sided:after {
+  border-left: 1em solid #c00;
+  right: -1em;
+}
+.form-field-alert.right-sided {
+  left: calc(100% + 1em);
+}
+@media (max-width: 1023px) {
+  .form-field-alert.right-sided {
+    left: auto;
+  }
+}
+.form-field-alert.right-sided:after {
+  border-right: 1em solid #c00;
+  left: -1em;
+}
 .form-field-alert:after {
   border-bottom: 1em solid transparent;
   border-top: 1em solid transparent;
-  border-right: 1em solid #c00;
   bottom: 0;
   content: '';
   display: block;
   height: 0;
-  left: -1em;
   margin: auto;
   position: absolute;
   top: 0;

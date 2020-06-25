@@ -122,33 +122,31 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-body {
-  background-color: #222;
-  color: #fff;
-  font-family: sans-serif;
+.form-field-container {
+  display: grid;
+  grid-template: "a c" "b d" "e e";
 }
-button {
-  background: transparent;
-  border: 1px solid #fff;
-  color: inherit;
-  cursor: pointer;
-  font: inherit;
-  outline: 0;
-  padding: 0.5em 1em;
-  transition: all 0.25s;
+.form-field:first-child {
+  grid-area: a;
 }
-button:hover {
-  background: #fff;
-  color: #000;
+.form-field:nth-child(2) {
+  grid-area: b;
 }
-h1 {
-  font-size: 2.5em;
+.form-field:nth-child(3) {
+  grid-area: c;
+}
+.form-field:nth-child(4) {
+  grid-area: d;
+}
+.form-field:nth-child(5) {
+  grid-area: e;
 }
 input,
 textarea,
 select {
   border: 0 solid;
   box-sizing: border-box;
+  flex-grow: 1;
   font: inherit;
   min-width: 300px;
   padding-left: 0.4em;
@@ -167,10 +165,6 @@ textarea {
   display: flex;
   margin-bottom: 10px;
   position: relative;
-}
-a {
-  color: inherit;
-  text-decoration: none;
 }
 .form-field-alert {
   background-color: #c00;
@@ -223,4 +217,37 @@ a {
     left: 10px;
     top: -1em;
   }
+}
+label {
+  box-sizing: border-box;
+  padding-right: 5px;
+  text-align: right;
+  width: 100px;
+}
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: sans-serif;
+}
+button {
+  background: transparent;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  padding: 0.5em 1em;
+  transition: all 0.25s;
+}
+button:hover {
+  background: #fff;
+  color: #000;
+}
+h1 {
+  font-size: 2.5em;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }

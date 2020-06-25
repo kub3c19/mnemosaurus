@@ -98,7 +98,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "header[data-v-153bfd55] {\n  align-items: center;\n  background-color: #111;\n  box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);\n  box-sizing: border-box;\n  display: flex;\n  height: 70px;\n  left: 0;\n  padding: 10px;\n  position: fixed;\n  top: 0;\n  width: 100vw;\n}\na.active[data-v-153bfd55] {\n  color: #aaa;\n  pointer-events: none;\n}\na.active button[data-v-153bfd55] {\n  background-color: #aaa;\n  color: #111;\n  border-color: #aaa;\n}\n.logo[data-v-153bfd55] {\n  font-size: 24px;\n  transition: all 0.25s;\n}\n.logo[data-v-153bfd55]:hover {\n  color: #aaa;\n}\n.login-container[data-v-153bfd55] {\n  justify-self: right;\n  margin-left: auto;\n}\n.login-form[data-v-153bfd55] {\n  align-items: center;\n  background-color: #111;\n  box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);\n  display: flex;\n  flex-direction: column;\n  padding: 10px;\n  position: absolute;\n  right: 0;\n  top: 100%;\n}\n.button-row[data-v-153bfd55] {\n  display: flex;\n}\n.login-button[data-v-153bfd55] {\n  margin-left: 5px;\n}\n", ""]);
+exports.push([module.i, "header[data-v-153bfd55] {\n  align-items: center;\n  background-color: #111;\n  box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);\n  box-sizing: border-box;\n  display: flex;\n  height: 70px;\n  left: 0;\n  padding: 10px;\n  position: fixed;\n  top: 0;\n  width: 100vw;\n}\na[data-v-153bfd55] {\n  transition: all 0.25s;\n}\na[data-v-153bfd55]:hover {\n  color: #aaa;\n}\na.active[data-v-153bfd55] {\n  color: #aaa;\n  pointer-events: none;\n}\na.active button[data-v-153bfd55] {\n  background-color: #aaa;\n  color: #111;\n  border-color: #aaa;\n}\n.logo[data-v-153bfd55] {\n  font-size: 24px;\n}\n.login-container[data-v-153bfd55] {\n  justify-self: right;\n  margin-left: auto;\n}\n.button-row[data-v-153bfd55] {\n  display: flex;\n}\n.login-button[data-v-153bfd55] {\n  margin-left: 5px;\n}\nnav[data-v-153bfd55] {\n  margin-left: 50px;\n}\n", ""]);
 
 // exports
 
@@ -155,7 +155,45 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".register-form-container[data-v-3763fb02] {\n  align-items: center;\n  display: flex;\n  justify-content: center;\n  height: 100vh;\n  text-align: center;\n  width: calc(100vw - 17px);\n}\n.register-form[data-v-3763fb02] {\n  border: 2px solid #fff;\n  padding: 40px;\n}\n.register-form form[data-v-3763fb02] {\n  margin-right: 100px;\n  margin-top: 35px;\n}\n.column[data-v-3763fb02] {\n  width: 50%;\n}\nlabel[data-v-3763fb02] {\n  box-sizing: border-box;\n  padding-right: 5px;\n  text-align: right;\n  width: 100px;\n}\ninput[data-v-3763fb02],\ntextarea[data-v-3763fb02],\nselect[data-v-3763fb02] {\n  flex-grow: 1;\n}\nbutton[data-v-3763fb02] {\n  margin-left: 100px;\n  margin-top: 10px;\n}\n.form-field-container[data-v-3763fb02] {\n  display: grid;\n  grid-template: \"a c\" \"b d\" \"e e\";\n}\n.form-field[data-v-3763fb02]:first-child {\n  grid-area: a;\n}\n.form-field[data-v-3763fb02]:nth-child(2) {\n  grid-area: b;\n}\n.form-field[data-v-3763fb02]:nth-child(3) {\n  grid-area: c;\n}\n.form-field[data-v-3763fb02]:nth-child(4) {\n  grid-area: d;\n}\n.form-field[data-v-3763fb02]:last-child {\n  grid-area: e;\n}\n", ""]);
+exports.push([module.i, ".add-mnemonic[data-v-3763fb02] {\n  align-items: center;\n  display: flex;\n  justify-content: center;\n  height: 100vh;\n  text-align: center;\n  width: calc(100vw - 17px);\n}\n.form-container[data-v-3763fb02] {\n  border: 2px solid #fff;\n  padding: 40px;\n}\n.form-container form[data-v-3763fb02] {\n  margin-right: 100px;\n  margin-top: 35px;\n}\n.column[data-v-3763fb02] {\n  width: 50%;\n}\nbutton[data-v-3763fb02] {\n  margin-left: 100px;\n  margin-top: 10px;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/stylus-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/LoginForm.vue?vue&type=style&index=0&id=1b3ff5c9&lang=stylus&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--10-2!./node_modules/stylus-loader!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/modules/form/components/LoginForm.vue?vue&type=style&index=0&id=1b3ff5c9&lang=stylus&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".login-form[data-v-1b3ff5c9] {\n  align-items: center;\n  background-color: #111;\n  box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);\n  display: flex;\n  flex-direction: column;\n  padding: 10px;\n  position: absolute;\n  right: 0;\n  top: 100%;\n}\nlabel[data-v-1b3ff5c9] {\n  width: auto;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/stylus-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/LogoutForm.vue?vue&type=style&index=0&id=32f528bc&lang=stylus&scoped=true&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--10-2!./node_modules/stylus-loader!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/modules/form/components/LogoutForm.vue?vue&type=style&index=0&id=32f528bc&lang=stylus&scoped=true& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -174,7 +212,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".register-form-container[data-v-611bb68a] {\n  align-items: center;\n  display: flex;\n  justify-content: center;\n  height: 100vh;\n  text-align: center;\n  width: calc(100vw - 17px);\n}\n.register-form[data-v-611bb68a] {\n  border: 2px solid #fff;\n  padding: 40px;\n}\n.register-form form[data-v-611bb68a] {\n  margin-right: 100px;\n  margin-top: 35px;\n}\nlabel[data-v-611bb68a] {\n  box-sizing: border-box;\n  padding-right: 5px;\n  text-align: right;\n  width: 100px;\n}\ninput[data-v-611bb68a] {\n  flex-grow: 1;\n}\nbutton[data-v-611bb68a] {\n  margin-left: 100px;\n  margin-top: 10px;\n}\n", ""]);
+exports.push([module.i, ".register-form[data-v-611bb68a] {\n  align-items: center;\n  display: flex;\n  justify-content: center;\n  height: 100vh;\n  text-align: center;\n  width: calc(100vw - 17px);\n}\n.form-container[data-v-611bb68a] {\n  border: 2px solid #fff;\n  padding: 40px;\n}\n.form-container form[data-v-611bb68a] {\n  margin-right: 100px;\n  margin-top: 35px;\n}\nbutton[data-v-611bb68a] {\n  margin-left: 100px;\n  margin-top: 10px;\n}\n", ""]);
 
 // exports
 
@@ -193,7 +231,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".mnemonics[data-v-47777c32] {\n  display: flex;\n  justify-content: center;\n  margin-top: 100px;\n}\n.mnemonics-content[data-v-47777c32] {\n  max-width: 600px;\n  width: 100%;\n}\n.search-form[data-v-47777c32] {\n  display: flex;\n  width: 100%;\n}\n.search-form input[data-v-47777c32] {\n  flex-grow: 1;\n}\n.search-form button[data-v-47777c32] {\n  background-color: #0000a6;\n  border-color: #0000a6;\n}\n.search-form button[data-v-47777c32]:hover {\n  background-color: #4d4dc1;\n  border-color: #4d4dc1;\n  color: #fff;\n}\n.mnemonic-table[data-v-47777c32] {\n  box-sizing: border-box;\n  margin-top: 10px;\n  width: 100%;\n}\n.mnemonic-table tbody[data-v-47777c32] {\n  border-collapse: collapse;\n  border-bottom: 4px solid #222;\n  border-top: 4px solid #222;\n  margin-bottom: 10px;\n}\n.mnemonic-table tbody:nth-child(odd) tr[data-v-47777c32] {\n  background-color: #101010;\n}\n.mnemonic-table tbody:nth-child(even) tr[data-v-47777c32] {\n  background-color: #2c2c2c;\n}\n.mnemonic-table tr[data-v-47777c32] {\n  line-height: 2.5em;\n}\n.mnemonic-table .text[data-v-47777c32] {\n  text-align: center;\n}\n", ""]);
+exports.push([module.i, ".mnemonics[data-v-47777c32] {\n  display: flex;\n  justify-content: center;\n  margin-top: 100px;\n}\n.mnemonics-content[data-v-47777c32] {\n  max-width: 600px;\n  width: 100%;\n}\n.search-form[data-v-47777c32] {\n  display: flex;\n  width: 100%;\n}\n.search-form input[data-v-47777c32] {\n  flex-grow: 1;\n}\n.search-form button[data-v-47777c32] {\n  background-color: #0000a6;\n  border-color: #0000a6;\n  height: 2em;\n}\n.search-form button[data-v-47777c32]:hover {\n  background-color: #4d4dc1;\n  border-color: #4d4dc1;\n  color: #fff;\n}\n.mnemonic-table[data-v-47777c32] {\n  box-sizing: border-box;\n  margin-top: 10px;\n  width: 100%;\n}\n.mnemonic-table tbody[data-v-47777c32] {\n  border-collapse: collapse;\n  border-bottom: 4px solid #222;\n  border-top: 4px solid #222;\n  margin-bottom: 10px;\n}\n.mnemonic-table tbody:nth-child(odd) tr[data-v-47777c32] {\n  background-color: #101010;\n}\n.mnemonic-table tbody:nth-child(even) tr[data-v-47777c32] {\n  background-color: #2c2c2c;\n}\n.mnemonic-table tr[data-v-47777c32] {\n  line-height: 2.5em;\n}\n.mnemonic-table .text[data-v-47777c32] {\n  text-align: center;\n}\n", ""]);
 
 // exports
 
@@ -779,6 +817,66 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--10-2!../../../../../node_modules/stylus-loader!../../../../../node_modules/vue-loader/lib??vue-loader-options!./AddMnemonic.vue?vue&type=style&index=0&id=3763fb02&lang=stylus&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/stylus-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/AddMnemonic.vue?vue&type=style&index=0&id=3763fb02&lang=stylus&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/stylus-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/LoginForm.vue?vue&type=style&index=0&id=1b3ff5c9&lang=stylus&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--10-2!./node_modules/stylus-loader!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/modules/form/components/LoginForm.vue?vue&type=style&index=0&id=1b3ff5c9&lang=stylus&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--10-2!../../../../../node_modules/stylus-loader!../../../../../node_modules/vue-loader/lib??vue-loader-options!./LoginForm.vue?vue&type=style&index=0&id=1b3ff5c9&lang=stylus&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/stylus-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/LoginForm.vue?vue&type=style&index=0&id=1b3ff5c9&lang=stylus&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/stylus-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/LogoutForm.vue?vue&type=style&index=0&id=32f528bc&lang=stylus&scoped=true&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--10-2!./node_modules/stylus-loader!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/modules/form/components/LogoutForm.vue?vue&type=style&index=0&id=32f528bc&lang=stylus&scoped=true& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--10-2!../../../../../node_modules/stylus-loader!../../../../../node_modules/vue-loader/lib??vue-loader-options!./LogoutForm.vue?vue&type=style&index=0&id=32f528bc&lang=stylus&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/stylus-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/LogoutForm.vue?vue&type=style&index=0&id=32f528bc&lang=stylus&scoped=true&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1465,6 +1563,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const vue_property_decorator_1 = __webpack_require__(/*! vue-property-decorator */ "./node_modules/vue-property-decorator/lib/vue-property-decorator.js");
 const CsrfToken_vue_1 = __importDefault(__webpack_require__(/*! ../modules/form/components/CsrfToken.vue */ "./resources/js/modules/form/components/CsrfToken.vue"));
+const LoginForm_vue_1 = __importDefault(__webpack_require__(/*! ../modules/form/components/LoginForm.vue */ "./resources/js/modules/form/components/LoginForm.vue"));
+const LogoutForm_vue_1 = __importDefault(__webpack_require__(/*! ../modules/form/components/LogoutForm.vue */ "./resources/js/modules/form/components/LogoutForm.vue"));
 /** @description A component containing the site header. */
 let HeaderComponent = class HeaderComponent extends vue_property_decorator_1.Vue {
     constructor() {
@@ -1483,7 +1583,9 @@ __decorate([
 HeaderComponent = __decorate([
     vue_property_decorator_1.Component({
         components: {
-            CsrfToken: CsrfToken_vue_1.default
+            LogoutForm: LogoutForm_vue_1.default,
+            CsrfToken: CsrfToken_vue_1.default,
+            LoginForm: LoginForm_vue_1.default
         },
         name: `HeaderComponent`
     })
@@ -1767,6 +1869,118 @@ CsrfToken = __decorate([
     })
 ], CsrfToken);
 exports.default = CsrfToken;
+
+
+/***/ }),
+
+/***/ "./node_modules/ts-loader/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/LoginForm.vue?vue&type=script&lang=ts&":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/ts-loader??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/modules/form/components/LoginForm.vue?vue&type=script&lang=ts& ***!
+  \***************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const vue_property_decorator_1 = __webpack_require__(/*! vue-property-decorator */ "./node_modules/vue-property-decorator/lib/vue-property-decorator.js");
+const vue_class_component_1 = __webpack_require__(/*! vue-class-component */ "./node_modules/vue-class-component/dist/vue-class-component.esm.js");
+const CsrfToken_vue_1 = __importDefault(__webpack_require__(/*! ./CsrfToken.vue */ "./resources/js/modules/form/components/CsrfToken.vue"));
+const Form_1 = __importDefault(__webpack_require__(/*! ../mixins/Form */ "./resources/js/modules/form/mixins/Form.ts"));
+/** @description A component containing the login form. */
+let LoginForm = class LoginForm extends vue_class_component_1.mixins(Form_1.default) {
+    constructor() {
+        super(...arguments);
+        /** @description Form fields. */
+        this.fields = {
+            /** @description The email form field. */
+            email: {
+                error: ``,
+                label: `Email`,
+                name: `email`,
+                order: 0,
+                tag: `input`,
+                type: `email`,
+                value: ``
+            },
+            /** @description The password form field. */
+            password: {
+                error: ``,
+                label: `Heslo`,
+                name: `password`,
+                order: 1,
+                tag: `input`,
+                type: `password`,
+                value: ``
+            }
+        };
+        this.redirectTo = `/`;
+    }
+};
+LoginForm = __decorate([
+    vue_property_decorator_1.Component({
+        components: {
+            CsrfToken: CsrfToken_vue_1.default
+        },
+        name: `LoginForm`
+    })
+], LoginForm);
+exports.default = LoginForm;
+
+
+/***/ }),
+
+/***/ "./node_modules/ts-loader/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/LogoutForm.vue?vue&type=script&lang=ts&":
+/*!****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/ts-loader??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/modules/form/components/LogoutForm.vue?vue&type=script&lang=ts& ***!
+  \****************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const vue_property_decorator_1 = __webpack_require__(/*! vue-property-decorator */ "./node_modules/vue-property-decorator/lib/vue-property-decorator.js");
+const vue_class_component_1 = __webpack_require__(/*! vue-class-component */ "./node_modules/vue-class-component/dist/vue-class-component.esm.js");
+const CsrfToken_vue_1 = __importDefault(__webpack_require__(/*! ./CsrfToken.vue */ "./resources/js/modules/form/components/CsrfToken.vue"));
+const Form_1 = __importDefault(__webpack_require__(/*! ../mixins/Form */ "./resources/js/modules/form/mixins/Form.ts"));
+/** @description A component containing the logout form. */
+let LogoutForm = class LogoutForm extends vue_class_component_1.mixins(Form_1.default) {
+    constructor() {
+        super(...arguments);
+        /** @description Form fields. */
+        this.fields = {};
+        this.method = `DELETE`;
+        this.redirectTo = window.location.href;
+    }
+};
+LogoutForm = __decorate([
+    vue_property_decorator_1.Component({
+        components: {
+            CsrfToken: CsrfToken_vue_1.default
+        },
+        name: `LogoutForm`
+    })
+], LogoutForm);
+exports.default = LogoutForm;
 
 
 /***/ }),
@@ -2277,6 +2491,17 @@ var render = function() {
       _vm._v("Mnemosaurus")
     ]),
     _vm._v(" "),
+    _c("nav", [
+      _c(
+        "a",
+        {
+          class: { active: _vm.pathname === "/mnemonics/create" },
+          attrs: { href: "/mnemonics/create" }
+        },
+        [_vm._v("Pridať mnemotechnickú pomôcku")]
+      )
+    ]),
+    _vm._v(" "),
     _c(
       "div",
       { staticClass: "login-container" },
@@ -2285,16 +2510,7 @@ var render = function() {
           ? [
               _c("p", [_vm._v("Prihlásený: " + _vm._s(_vm.username))]),
               _vm._v(" "),
-              _c(
-                "form",
-                { attrs: { action: "/logout", method: "get" } },
-                [
-                  _c("csrf-token"),
-                  _vm._v(" "),
-                  _c("button", [_vm._v("Odhlásiť sa")])
-                ],
-                1
-              )
+              _c("logout-form")
             ]
           : [
               _c("div", { staticClass: "button-row" }, [
@@ -2317,67 +2533,22 @@ var render = function() {
                       }
                     }
                   },
-                  [_vm._v("Prihlásenie")]
+                  [
+                    _vm._v(
+                      "\n                    Prihlásenie\n                "
+                    )
+                  ]
                 )
               ]),
               _vm._v(" "),
-              _vm.loginFormVisible
-                ? _c(
-                    "form",
-                    {
-                      staticClass: "login-form",
-                      attrs: { action: "/login", method: "post" }
-                    },
-                    [
-                      _c("csrf-token"),
-                      _vm._v(" "),
-                      _vm._m(0),
-                      _vm._v(" "),
-                      _vm._m(1),
-                      _vm._v(" "),
-                      _c("button", [_vm._v("Odoslať")])
-                    ],
-                    1
-                  )
-                : _vm._e()
+              _vm.loginFormVisible ? _c("login-form") : _vm._e()
             ]
       ],
       2
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-field" }, [
-      _c("input", {
-        attrs: {
-          name: "email",
-          placeholder: "Email",
-          required: "",
-          type: "email"
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-field" }, [
-      _c("input", {
-        attrs: {
-          name: "password",
-          placeholder: "Heslo",
-          required: "",
-          type: "password"
-        }
-      })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -2496,8 +2667,8 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "register-form-container" }, [
-    _c("div", { staticClass: "register-form" }, [
+  return _c("div", { staticClass: "add-mnemonic" }, [
+    _c("div", { staticClass: "form-container" }, [
       _c("h1", [_vm._v("Pridať mnemotechnickú pomôcku")]),
       _vm._v(" "),
       _c(
@@ -2505,7 +2676,12 @@ var render = function() {
         {
           ref: "form",
           attrs: { action: "/mnemonics", method: "post" },
-          on: { submit: _vm.submitOn }
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.submitOn($event)
+            }
+          }
         },
         [
           _c("csrf-token"),
@@ -2646,6 +2822,181 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/LoginForm.vue?vue&type=template&id=1b3ff5c9&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/modules/form/components/LoginForm.vue?vue&type=template&id=1b3ff5c9&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "form",
+    {
+      ref: "form",
+      staticClass: "login-form",
+      attrs: { action: "/sessions", method: "post" },
+      on: {
+        submit: function($event) {
+          $event.preventDefault()
+          return _vm.submitOn($event)
+        }
+      }
+    },
+    [
+      _c("csrf-token"),
+      _vm._v(" "),
+      _vm._l(_vm.fieldsSorted, function(ref) {
+        var field = ref[1]
+        return _c("div", { key: field.name, staticClass: "form-field" }, [
+          _c("label", { attrs: { for: field.name } }, [
+            _vm._v(_vm._s(field.label) + ":")
+          ]),
+          _vm._v(" "),
+          field.type === "checkbox"
+            ? _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: field.value,
+                    expression: "field.value"
+                  }
+                ],
+                attrs: { id: field.name, name: field.name, type: "checkbox" },
+                domProps: {
+                  checked: Array.isArray(field.value)
+                    ? _vm._i(field.value, null) > -1
+                    : field.value
+                },
+                on: {
+                  change: function($event) {
+                    var $$a = field.value,
+                      $$el = $event.target,
+                      $$c = $$el.checked ? true : false
+                    if (Array.isArray($$a)) {
+                      var $$v = null,
+                        $$i = _vm._i($$a, $$v)
+                      if ($$el.checked) {
+                        $$i < 0 && _vm.$set(field, "value", $$a.concat([$$v]))
+                      } else {
+                        $$i > -1 &&
+                          _vm.$set(
+                            field,
+                            "value",
+                            $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                          )
+                      }
+                    } else {
+                      _vm.$set(field, "value", $$c)
+                    }
+                  }
+                }
+              })
+            : field.type === "radio"
+            ? _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: field.value,
+                    expression: "field.value"
+                  }
+                ],
+                attrs: { id: field.name, name: field.name, type: "radio" },
+                domProps: { checked: _vm._q(field.value, null) },
+                on: {
+                  change: function($event) {
+                    return _vm.$set(field, "value", null)
+                  }
+                }
+              })
+            : _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: field.value,
+                    expression: "field.value"
+                  }
+                ],
+                attrs: { id: field.name, name: field.name, type: field.type },
+                domProps: { value: field.value },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(field, "value", $event.target.value)
+                  }
+                }
+              }),
+          _vm._v(" "),
+          field.error
+            ? _c("div", { staticClass: "form-field-alert" }, [
+                _vm._v(_vm._s(field.error))
+              ])
+            : _vm._e()
+        ])
+      }),
+      _vm._v(" "),
+      _c("button", [_vm._v("Odoslať")])
+    ],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/LogoutForm.vue?vue&type=template&id=32f528bc&scoped=true&":
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/modules/form/components/LogoutForm.vue?vue&type=template&id=32f528bc&scoped=true& ***!
+  \**************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "form",
+    {
+      ref: "form",
+      attrs: { action: "/sessions" },
+      on: {
+        submit: function($event) {
+          $event.preventDefault()
+          return _vm.submitOn($event)
+        }
+      }
+    },
+    [_c("csrf-token"), _vm._v(" "), _c("button", [_vm._v("Odhlásiť sa")])],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/RegisterForm.vue?vue&type=template&id=611bb68a&scoped=true&":
 /*!****************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/modules/form/components/RegisterForm.vue?vue&type=template&id=611bb68a&scoped=true& ***!
@@ -2661,8 +3012,8 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "register-form-container" }, [
-    _c("div", { staticClass: "register-form" }, [
+  return _c("div", { staticClass: "register-form" }, [
+    _c("div", { staticClass: "form-container" }, [
       _c("h1", [_vm._v("Registrácia")]),
       _vm._v(" "),
       _c(
@@ -2670,7 +3021,12 @@ var render = function() {
         {
           ref: "form",
           attrs: { action: "/users", method: "post" },
-          on: { submit: _vm.submitOn }
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.submitOn($event)
+            }
+          }
         },
         [
           _c("csrf-token"),
@@ -15795,6 +16151,186 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/modules/form/components/LoginForm.vue":
+/*!************************************************************!*\
+  !*** ./resources/js/modules/form/components/LoginForm.vue ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LoginForm_vue_vue_type_template_id_1b3ff5c9_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LoginForm.vue?vue&type=template&id=1b3ff5c9&scoped=true& */ "./resources/js/modules/form/components/LoginForm.vue?vue&type=template&id=1b3ff5c9&scoped=true&");
+/* harmony import */ var _LoginForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LoginForm.vue?vue&type=script&lang=ts& */ "./resources/js/modules/form/components/LoginForm.vue?vue&type=script&lang=ts&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _LoginForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _LoginForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _LoginForm_vue_vue_type_style_index_0_id_1b3ff5c9_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LoginForm.vue?vue&type=style&index=0&id=1b3ff5c9&lang=stylus&scoped=true& */ "./resources/js/modules/form/components/LoginForm.vue?vue&type=style&index=0&id=1b3ff5c9&lang=stylus&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _LoginForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _LoginForm_vue_vue_type_template_id_1b3ff5c9_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _LoginForm_vue_vue_type_template_id_1b3ff5c9_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "1b3ff5c9",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/modules/form/components/LoginForm.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/modules/form/components/LoginForm.vue?vue&type=script&lang=ts&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/modules/form/components/LoginForm.vue?vue&type=script&lang=ts& ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_ts_loader_index_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/ts-loader??ref--11-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./LoginForm.vue?vue&type=script&lang=ts& */ "./node_modules/ts-loader/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/LoginForm.vue?vue&type=script&lang=ts&");
+/* harmony import */ var _node_modules_ts_loader_index_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_ts_loader_index_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_ts_loader_index_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_ts_loader_index_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_ts_loader_index_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/modules/form/components/LoginForm.vue?vue&type=style&index=0&id=1b3ff5c9&lang=stylus&scoped=true&":
+/*!************************************************************************************************************************!*\
+  !*** ./resources/js/modules/form/components/LoginForm.vue?vue&type=style&index=0&id=1b3ff5c9&lang=stylus&scoped=true& ***!
+  \************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_2_node_modules_stylus_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginForm_vue_vue_type_style_index_0_id_1b3ff5c9_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/style-loader!../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--10-2!../../../../../node_modules/stylus-loader!../../../../../node_modules/vue-loader/lib??vue-loader-options!./LoginForm.vue?vue&type=style&index=0&id=1b3ff5c9&lang=stylus&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/stylus-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/LoginForm.vue?vue&type=style&index=0&id=1b3ff5c9&lang=stylus&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_2_node_modules_stylus_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginForm_vue_vue_type_style_index_0_id_1b3ff5c9_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_2_node_modules_stylus_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginForm_vue_vue_type_style_index_0_id_1b3ff5c9_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_2_node_modules_stylus_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginForm_vue_vue_type_style_index_0_id_1b3ff5c9_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_2_node_modules_stylus_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginForm_vue_vue_type_style_index_0_id_1b3ff5c9_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_2_node_modules_stylus_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginForm_vue_vue_type_style_index_0_id_1b3ff5c9_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/modules/form/components/LoginForm.vue?vue&type=template&id=1b3ff5c9&scoped=true&":
+/*!*******************************************************************************************************!*\
+  !*** ./resources/js/modules/form/components/LoginForm.vue?vue&type=template&id=1b3ff5c9&scoped=true& ***!
+  \*******************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginForm_vue_vue_type_template_id_1b3ff5c9_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./LoginForm.vue?vue&type=template&id=1b3ff5c9&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/LoginForm.vue?vue&type=template&id=1b3ff5c9&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginForm_vue_vue_type_template_id_1b3ff5c9_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginForm_vue_vue_type_template_id_1b3ff5c9_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/modules/form/components/LogoutForm.vue":
+/*!*************************************************************!*\
+  !*** ./resources/js/modules/form/components/LogoutForm.vue ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LogoutForm_vue_vue_type_template_id_32f528bc_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LogoutForm.vue?vue&type=template&id=32f528bc&scoped=true& */ "./resources/js/modules/form/components/LogoutForm.vue?vue&type=template&id=32f528bc&scoped=true&");
+/* harmony import */ var _LogoutForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LogoutForm.vue?vue&type=script&lang=ts& */ "./resources/js/modules/form/components/LogoutForm.vue?vue&type=script&lang=ts&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _LogoutForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _LogoutForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _LogoutForm_vue_vue_type_style_index_0_id_32f528bc_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LogoutForm.vue?vue&type=style&index=0&id=32f528bc&lang=stylus&scoped=true& */ "./resources/js/modules/form/components/LogoutForm.vue?vue&type=style&index=0&id=32f528bc&lang=stylus&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _LogoutForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _LogoutForm_vue_vue_type_template_id_32f528bc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _LogoutForm_vue_vue_type_template_id_32f528bc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "32f528bc",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/modules/form/components/LogoutForm.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/modules/form/components/LogoutForm.vue?vue&type=script&lang=ts&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/modules/form/components/LogoutForm.vue?vue&type=script&lang=ts& ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_ts_loader_index_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoutForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/ts-loader??ref--11-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./LogoutForm.vue?vue&type=script&lang=ts& */ "./node_modules/ts-loader/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/LogoutForm.vue?vue&type=script&lang=ts&");
+/* harmony import */ var _node_modules_ts_loader_index_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoutForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_ts_loader_index_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoutForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_ts_loader_index_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoutForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_ts_loader_index_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoutForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_ts_loader_index_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoutForm_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/modules/form/components/LogoutForm.vue?vue&type=style&index=0&id=32f528bc&lang=stylus&scoped=true&":
+/*!*************************************************************************************************************************!*\
+  !*** ./resources/js/modules/form/components/LogoutForm.vue?vue&type=style&index=0&id=32f528bc&lang=stylus&scoped=true& ***!
+  \*************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_2_node_modules_stylus_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoutForm_vue_vue_type_style_index_0_id_32f528bc_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/style-loader!../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--10-2!../../../../../node_modules/stylus-loader!../../../../../node_modules/vue-loader/lib??vue-loader-options!./LogoutForm.vue?vue&type=style&index=0&id=32f528bc&lang=stylus&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/stylus-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/LogoutForm.vue?vue&type=style&index=0&id=32f528bc&lang=stylus&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_2_node_modules_stylus_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoutForm_vue_vue_type_style_index_0_id_32f528bc_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_2_node_modules_stylus_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoutForm_vue_vue_type_style_index_0_id_32f528bc_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_2_node_modules_stylus_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoutForm_vue_vue_type_style_index_0_id_32f528bc_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_2_node_modules_stylus_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoutForm_vue_vue_type_style_index_0_id_32f528bc_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_2_node_modules_stylus_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoutForm_vue_vue_type_style_index_0_id_32f528bc_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/modules/form/components/LogoutForm.vue?vue&type=template&id=32f528bc&scoped=true&":
+/*!********************************************************************************************************!*\
+  !*** ./resources/js/modules/form/components/LogoutForm.vue?vue&type=template&id=32f528bc&scoped=true& ***!
+  \********************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoutForm_vue_vue_type_template_id_32f528bc_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./LogoutForm.vue?vue&type=template&id=32f528bc&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/modules/form/components/LogoutForm.vue?vue&type=template&id=32f528bc&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoutForm_vue_vue_type_template_id_32f528bc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoutForm_vue_vue_type_template_id_32f528bc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/modules/form/components/RegisterForm.vue":
 /*!***************************************************************!*\
   !*** ./resources/js/modules/form/components/RegisterForm.vue ***!
@@ -15916,21 +16452,23 @@ let FormMixin = class FormMixin extends vue_property_decorator_1.Vue {
      * @description Listener of the submit event.
      * @param $event An object containing the event-related data.
      * */
+    // eslint-disable-next-line no-unused-vars
     submitOn($event) {
+        var _a;
         return __awaiter(this, void 0, void 0, function* () {
             const formData = new FormData(this.$refs.form);
-            $event.preventDefault();
             return fetch(this.$refs.form.action, {
                 body: formData,
                 credentials: `same-origin`,
                 headers: {
+                    "X-CSRF-Token": this.token,
                     "X-Requested-With": "XMLHttpRequest",
                 },
-                method: `POST`
+                method: (_a = this.method) !== null && _a !== void 0 ? _a : `POST`
             }).then((response) => __awaiter(this, void 0, void 0, function* () {
                 if (response.status >= 400) {
                     const { errors, message } = yield response.json();
-                    Object.entries(errors).forEach(([formFieldName, formFieldErrors]) => {
+                    Object.entries(errors !== null && errors !== void 0 ? errors : {}).forEach(([formFieldName, formFieldErrors]) => {
                         this.fields[formFieldName].error = formFieldErrors.join(`, `);
                     });
                     this.$root.$emit(`alert-show`, {
@@ -15957,6 +16495,10 @@ let FormMixin = class FormMixin extends vue_property_decorator_1.Vue {
         return Object.entries(this.fields).sort(([, fieldA], [, fieldB]) => {
             return fieldA.order - fieldB.order;
         });
+    }
+    /** @description Token preventing Cross-site request forgery. */
+    get token() {
+        return document.querySelector(`meta[name=token]`).content;
     }
 };
 FormMixin = __decorate([

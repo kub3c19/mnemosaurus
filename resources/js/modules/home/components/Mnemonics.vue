@@ -88,6 +88,7 @@
 
             background-color $color
             border-color $color
+            height 2em
 
             $colorHover = blend(rgba($color, .7), #ffffff)
 

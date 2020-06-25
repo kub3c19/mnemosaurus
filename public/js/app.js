@@ -2504,7 +2504,7 @@ var render = function() {
         "form",
         {
           ref: "form",
-          attrs: { action: "/add-mnemonic", method: "post" },
+          attrs: { action: "/mnemonics", method: "post" },
           on: { submit: _vm.submitOn }
         },
         [
@@ -2669,7 +2669,7 @@ var render = function() {
         "form",
         {
           ref: "form",
-          attrs: { action: "/register", method: "post" },
+          attrs: { action: "/users", method: "post" },
           on: { submit: _vm.submitOn }
         },
         [

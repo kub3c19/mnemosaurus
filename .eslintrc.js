@@ -70,6 +70,7 @@ module.exports = {
         'quote-props': 'off',
         quotes: 'off',
         radix: 'off',
+        '@typescript-eslint/explicit-member-accessibility': 'off',
         'vue/script-indent': [
             'off',
             4,
@@ -79,6 +80,15 @@ module.exports = {
         ],
         'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
     },
+
+    overrides: [
+        {
+            files: ['*.ts', '*.tsx', '*.vue'],
+            rules: {
+                '@typescript-eslint/explicit-member-accessibility': ['error']
+            }
+        }
+    ],
 
     parserOptions: {
         parser: '@typescript-eslint/parser',

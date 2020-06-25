@@ -2,7 +2,7 @@
     <div class="register-form-container">
         <div class="register-form">
             <h1>Registrácia</h1>
-            <form action="/register" method="post" ref="form" @submit="submitOn">
+            <form action="/users" method="post" ref="form" @submit="submitOn">
                 <csrf-token/>
                 <div v-for="[, field] in fieldsSorted" :key="field.name" class="form-field">
                     <label :for="field.name">{{field.label}}:</label>

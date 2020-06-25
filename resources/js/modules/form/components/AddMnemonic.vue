@@ -2,7 +2,7 @@
     <div class="register-form-container">
         <div class="register-form">
             <h1>Pridať mnemotechnickú pomôcku</h1>
-            <form action="/add-mnemonic" method="post" ref="form" @submit="submitOn">
+            <form action="/mnemonics" method="post" ref="form" @submit="submitOn">
                 <csrf-token/>
                 <div class="form-field-container">
                     <div v-for="[, field] in fieldsSorted" :key="field.name" class="form-field">
@@ -27,10 +27,11 @@
 <script lang="ts">
     import {Component} from "vue-property-decorator";
     import {mixins}    from "vue-class-component";
+    // eslint-disable-next-line no-unused-vars
+    import {Merge}     from "ts-essentials";
     import CsrfToken   from "./CsrfToken.vue";
     import FormMixin   from "../mixins/Form";
     // eslint-disable-next-line no-unused-vars
-    import {Merge}     from "ts-essentials";
     import {FormField} from "../types";
 
     /** @description A component containing the form to add a mnemonic. */

@@ -1,31 +1,25 @@
 <template>
     <header>
         <a class="logo" href="/">Mnemosaurus</a>
+        <nav>
+            <a :class="{active: pathname === `/mnemonics/create`}"
+               href="/mnemonics/create">Pridať mnemotechnickú pomôcku</a>
+        </nav>
         <div class="login-container">
             <template v-if="username">
                 <p>Prihlásený: {{username}}</p>
-                <form action="/logout" method="get">
-                    <csrf-token/>
-                    <button>Odhlásiť sa</button>
-                </form>
+                <logout-form/>
             </template>
             <template v-else>
                 <div class="button-row">
                     <a :class="{active: pathname === `/register`}" href="/register">
                         <button>Registrácia</button>
                     </a>
-                    <button @click="loginFormVisible = !loginFormVisible" class="login-button">Prihlásenie</button>
+                    <button @click="loginFormVisible = !loginFormVisible" class="login-button">
+                        Prihlásenie
+                    </button>
                 </div>
-                <form v-if="loginFormVisible" action="/login" class="login-form" method="post">
-                    <csrf-token/>
-                    <div class="form-field">
-                        <input name="email" placeholder="Email" required type="email">
-                    </div>
-                    <div class="form-field">
-                        <input name="password" placeholder="Heslo" required type="password">
-                    </div>
-                    <button>Odoslať</button>
-                </form>
+                <login-form v-if="loginFormVisible"/>
             </template>
         </div>
     </header>
@@ -34,11 +28,15 @@
 <script lang="ts">
     import {Component, Prop, Vue} from "vue-property-decorator";
     import CsrfToken              from "../modules/form/components/CsrfToken.vue";
+    import LoginForm              from "../modules/form/components/LoginForm.vue";
+    import LogoutForm             from "../modules/form/components/LogoutForm.vue";
 
     /** @description A component containing the site header. */
     @Component({
         components: {
-            CsrfToken
+            LogoutForm,
+            CsrfToken,
+            LoginForm
         },
         name: `HeaderComponent`
     })
@@ -60,9 +58,7 @@
 
 <style lang="stylus" scoped>
     @import '~@/stylus/tomwork.functions.styl'
-
-    $headerBackground = #111111;
-    $headerBoxShadow = 0 0 10px 0 rgba(0, 0, 0, .3);
+    @import '~@/stylus/variables.styl'
 
     header
         align-items center
@@ -78,6 +74,11 @@
         width 100vw
 
     a
+        transition .25s
+
+        &:hover
+            font-color #aaaaaa
+
         &.active
             font-color #aaaaaa
             pointer-events none
@@ -89,29 +90,17 @@
 
     .logo
         font-size 24px
-        transition .25s
-
-        &:hover
-            font-color #aaaaaa
 
     .login-container
         justify-self right
         margin-left auto
-
-    .login-form
-        align-items center
-        background-color $headerBackground
-        box-shadow $headerBoxShadow
-        display flex
-        flex-direction column
-        padding 10px
-        position absolute
-        right 0
-        top 100%
 
     .button-row
         display flex
 
     .login-button
         margin-left 5px
+
+    nav
+        margin-left 50px
 </style>

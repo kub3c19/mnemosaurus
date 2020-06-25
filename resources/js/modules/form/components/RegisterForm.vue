@@ -1,8 +1,8 @@
 <template>
-    <div class="register-form-container">
-        <div class="register-form">
+    <div class="register-form">
+        <div class="form-container">
             <h1>Registrácia</h1>
-            <form action="/users" method="post" ref="form" @submit="submitOn">
+            <form action="/users" method="post" ref="form" @submit.prevent="submitOn">
                 <csrf-token/>
                 <div v-for="[, field] in fieldsSorted" :key="field.name" class="form-field">
                     <label :for="field.name">{{field.label}}:</label>
@@ -71,7 +71,7 @@
 <style lang="stylus" scoped>
     @import '~@/stylus/tomwork.functions.styl'
 
-    .register-form-container
+    .register-form
         align-items center
         display flex
         justify-content center
@@ -79,22 +79,13 @@
         text-align center
         width calc(100vw - 17px)
 
-    .register-form
+    .form-container
         border 2px solid #ffffff
         padding 40px
 
         form
             margin-right 100px
             margin-top 35px
-
-    label
-        box-sizing border-box
-        padding-right 5px
-        text-align right
-        width 100px
-
-    input
-        flex-grow 1
 
     button
         margin-left 100px

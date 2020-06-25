@@ -1,8 +1,8 @@
 <template>
-    <div class="register-form-container">
-        <div class="register-form">
+    <div class="add-mnemonic">
+        <div class="form-container">
             <h1>Pridať mnemotechnickú pomôcku</h1>
-            <form action="/mnemonics" method="post" ref="form" @submit="submitOn">
+            <form action="/mnemonics" method="post" ref="form" @submit.prevent="submitOn">
                 <csrf-token/>
                 <div class="form-field-container">
                     <div v-for="[, field] in fieldsSorted" :key="field.name" class="form-field">
@@ -131,7 +131,7 @@
 <style lang="stylus" scoped>
     @import '~@/stylus/tomwork.functions.styl'
 
-    .register-form-container
+    .add-mnemonic
         align-items center
         display flex
         justify-content center
@@ -139,7 +139,7 @@
         text-align center
         width calc(100vw - 17px)
 
-    .register-form
+    .form-container
         border 2px solid #ffffff
         padding 40px
 
@@ -150,38 +150,7 @@
     .column
         width 50%
 
-    label
-        box-sizing border-box
-        padding-right 5px
-        text-align right
-        width 100px
-
-    input, textarea, select
-        flex-grow 1
-
     button
         margin-left 100px
         margin-top 10px
-
-    .form-field-container
-        display grid
-        grid-template "a c"\
-        "b d"\
-        "e e"
-
-    .form-field
-        &:first-child
-            grid-area a
-
-        &:nth-child(2)
-            grid-area b
-
-        &:nth-child(3)
-            grid-area c
-
-        &:nth-child(4)
-            grid-area d
-
-        &:last-child
-            grid-area e
 </style>

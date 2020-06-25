@@ -46,7 +46,6 @@ textarea
     background-color #cc0000
     font-color #ffffff
     height 100%
-    left calc(100% + 1em)
     line-height 2
     padding-horizontal .4em
     position absolute
@@ -57,22 +56,39 @@ textarea
     @media (max-width 1023px)
         bottom auto
         left 100px
-        right auto
         top (2.3 * 1.5) em
 
     @media (max-width 599px)
         left 0
         top (2.3 * 2.5) em
 
+    &.left-sided
+        right calc(100% + 1em)
+
+        @media (max-width 1023px)
+            right auto
+
+        &:after
+            border-left 1em #cc0000
+            right -1em
+
+    &.right-sided
+        left calc(100% + 1em)
+
+        @media (max-width 1023px)
+            left auto
+
+        &:after
+            border-right 1em #cc0000
+            left -1em
+
     &:after
         border-bottom 1em transparent
         border-top 1em transparent
-        border-right 1em solid #cc0000
         bottom 0
         content ''
         display block
         height 0
-        left -1em
         margin auto
         position absolute
         top 0

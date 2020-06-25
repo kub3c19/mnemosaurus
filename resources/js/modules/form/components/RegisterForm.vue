@@ -7,7 +7,8 @@
                 <div v-for="[, field] in fieldsSorted" :key="field.name" class="form-field">
                     <label :for="field.name">{{field.label}}:</label>
                     <input :id="field.name" :name="field.name" :type="field.type" v-model="field.value">
-                    <div v-if="field.error" class="form-field-alert">{{field.error}}</div>
+                    <div v-if="field.error"
+                         class="form-field-alert right-sided">{{field.error}}</div>
                 </div>
                 <button>Odoslať</button>
             </form>

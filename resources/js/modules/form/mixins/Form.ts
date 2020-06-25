@@ -16,26 +16,26 @@ export default class FormMixin extends Vue
      * @description Listener of the submit event.
      * @param $event An object containing the event-related data.
      * */
+    // eslint-disable-next-line no-unused-vars
     public async submitOn($event: Event): Promise<void>
     {
         const formData: FormData = new FormData(this.$refs.form);
-
-        $event.preventDefault();
 
         return fetch(this.$refs.form.action, {
             body: formData,
             credentials: `same-origin`,
             headers: {
+                "X-CSRF-Token": this.token,
                 "X-Requested-With": "XMLHttpRequest",
             },
-            method: `POST`
+            method: this.method ?? `POST`
         }).then(async (response: Merge<Response, { json(): Promise<ResponseJSON> }>) =>
         {
             if (response.status >= 400)
             {
                 const {errors, message} = await response.json();
 
-                Object.entries(errors).forEach(([formFieldName, formFieldErrors]) =>
+                Object.entries(errors ?? {}).forEach(([formFieldName, formFieldErrors]) =>
                 {
                     this.fields[formFieldName].error = formFieldErrors.join(`, `);
                 });
@@ -78,6 +78,15 @@ export default class FormMixin extends Vue
             return fieldA.order - fieldB.order;
         });
     }
+
+    /** @description Token preventing Cross-site request forgery. */
+    public get token(): string
+    {
+        return document.querySelector<HTMLMetaElement>(`meta[name=token]`).content;
+    }
+
+    /** @description The HTTP method of the form. */
+    public method?: 'GET' | 'POST' | 'PUT' | 'DELETE';
 
     /** @description The URL the site should redirect to in case of a successful submit. */
     public redirectTo?: string;
